@@ -87,7 +87,7 @@ namespace zir1
                 else if (coords[0, 1] == coords[1, 1])
                 {
                     result.Add(coords[0, 0] < 5 - 1 ? table[coords[0, 0] + 1, coords[0, 1]] : table[0, coords[0, 1]]);
-                    result.Add(coords[0, 1] < 5 - 1 ? table[coords[1, 0] + 1, coords[1, 1]] : table[0, coords[1, 1]]);
+                    result.Add(coords[1, 0] < 5 - 1 ? table[coords[1, 0] + 1, coords[1, 1]] : table[0, coords[1, 1]]);
                 }
                 else
                 {
@@ -135,7 +135,7 @@ namespace zir1
                 else if (coords[0, 1] == coords[1, 1])
                 {
                     result.Add(coords[0, 0] > 0 ? table[coords[0, 0] - 1, coords[0, 1]] : table[5 - 1, coords[0, 1]]);
-                    result.Add(coords[0, 1] > 0 ? table[coords[1, 0] - 1, coords[1, 1]] : table[5 - 1, coords[1, 1]]);
+                    result.Add(coords[1, 0] > 0 ? table[coords[1, 0] - 1, coords[1, 1]] : table[5 - 1, coords[1, 1]]);
                 }
                 else
                 {
